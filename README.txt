@@ -1,1 +1,1 @@
-very first raytracer build! yeet! wow~
+very first raytracer build! yeet! wow~ yowzers this is hard
