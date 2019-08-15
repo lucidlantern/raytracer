@@ -1,0 +1,7 @@
+# ignore object and archive files
+*.[oa]
+# ignore tilde-ended files
+*~
+# ignore .out and .exe
+*.out
+*.exe
