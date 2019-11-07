@@ -14,12 +14,15 @@ int pixel::getCVal(colorEnum e)
 
 void pixel::setVals(int r, int g, int b)
 {
-	red = r;
-	grn = g;
-	blu = b;
+	if (r != NULL)
+		red = r;
+	if (g != NULL)
+		grn = g;
+	if (b != NULL)
+		blu = b;
 }
 
 void pixel::invert()
 {
-
+	
 }
