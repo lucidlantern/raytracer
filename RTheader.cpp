@@ -1,8 +1,8 @@
 #include "RTheader.h"
 
-pixel::pixel(int r = -1, int g = -1; int b = -1) : red(r), grn(g), blu(b) {}
+Pixel::Pixel(int r = -1, int g = -1; int b = -1) : red(r), grn(g), blu(b) {}
 
-int pixel::getCVal(colorEnum e)
+int Pixel::getCVal(colorEnum e)
 {
 	if (e == RED) // Case selection is red
 		return red;
@@ -12,7 +12,7 @@ int pixel::getCVal(colorEnum e)
 		return blu;
 }
 
-void pixel::setVals(int r, int g, int b)
+void Pixel::setVals(int r, int g, int b)
 {
 	if (r != NULL)
 		red = r;
@@ -22,7 +22,10 @@ void pixel::setVals(int r, int g, int b)
 		blu = b;
 }
 
-void pixel::invert()
+void Pixel::invert()
 {
-	
+	// This should be the correct logic
+	red = 255 - red;
+	grn = 255 - grn;
+	blu = 255 - blu;
 }

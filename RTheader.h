@@ -6,7 +6,7 @@
 
 const enum colorEnum{RED, GREEN, BLUE};
 
-class pixel
+class Pixel
 {
 private:
 	int red;
@@ -17,6 +17,17 @@ public:
 	int getCVal(colorEnum);
 	void setVals(int, int, int);
 	void invert(); // Invert colors, for funsies
+}
+
+class Point
+{
+	// Points have X, Y, and Z coordinates
+}
+
+class Ray
+{
+	// Rays have a starting position and orientation
+	// computePrimRay(i, j, &primRay);
 }
 
 #endif
